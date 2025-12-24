@@ -14,9 +14,6 @@ let student = {
         console.log('Name :', student.Age);   
     }
 }
-student.hello();
-student['teacher'] = "Jaynesh Sarkar";
-student.Name = "Jay Bheem";
 
 console.log("Name :", student.Name);
 console.log("Surname : ", student.Surname);
@@ -29,5 +26,8 @@ console.log("Atteendence : ", student.Attendence ? "Present": "Absenence");
 console.log("Subject : ", ...student.subjects);
 console.log(student);
 
+Object.seal(student); // not able to add or remove any key:pair value from object.. but can modify the value.
+Object.freeze(student); // Not able to add, remove and modify the key:value pair into object.
 
-
+console.log('rollNo' in student);
+console.log('GRID' in student);
