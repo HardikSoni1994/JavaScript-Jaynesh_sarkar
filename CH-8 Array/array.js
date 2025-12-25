@@ -2,7 +2,8 @@ document.write("<h3>Let's start practice of Array</h3>")
 let array = [10, 20, 30, 89.53, true, "soni"];
 // index =  0   1   2   3      4      5
 
-// console.log(array);
+console.log(array);
+
 
 // console.log(array[1]);
 // console.log("Array Length : ",array.length);
