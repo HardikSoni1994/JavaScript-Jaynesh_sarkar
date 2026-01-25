@@ -3,11 +3,13 @@ function myName() {
 }
 myName();
 
-function user(username = 'NULL') {  // default parameter
+function userDetails(username, profession, age) {  // default parameter
     console.log(`My Name is ${username}`);
-    console.log("I'm a Full Stack Developer.");    
+    console.log(`I am a ${profession}`);
+    console.log(`I'm ${age} years old..`);
+      
 }
 console.log("---------------------------");
-user("Hardik");
+userDetails("Hardik", "Full Stack Developer", 27);
 console.log("---------------------------");
-user();
+userDetails(); // DEFAULT value passed in argument.(default parameter undefined value passed)
