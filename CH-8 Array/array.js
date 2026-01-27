@@ -87,3 +87,32 @@ console.log(array);
 // console.log("Name : ", name.slice(0, name.length));
 // console.log("Split :", name.split(" "));
 
+let myCarBrand = ["toyota", "BMW", "kia", "Audi", "Hyundai", "porsche", "mercedes"];
+
+// myCarBrand.push("Tesla");  // push
+// console.log("After Push :", myCarBrand);
+
+// myCarBrand.pop();
+// console.log("After pop :", myCarBrand);
+
+console.log(myCarBrand);
+
+let totalCars = myCarBrand.length;
+console.log("Total Cars in my Garage :", totalCars);
+console.log("-----------------------------------");
+
+let isAudiFound = false;
+for (let i = 0; i < myCarBrand.length; i++){
+        // console.log(" This is a " + (i+1) +" car of my collection:- " +  myCarBrand[i]);
+
+    if (myCarBrand[i] === "Audi") {
+        console.log("😎🤩 Yes, sir i've collection of Audi Cars at line of: ", i);
+        isAudiFound = true;
+        break;
+    }
+   
+}
+ if (isAudiFound === false) {
+        console.log("Sorry!!! Audi not found in Garage...");
+        
+    }
